@@ -14,7 +14,7 @@ nvm use 20.9.0
 <br>
 git clone https://github.com/ArvinN15/WebAndScriptG23.git
 <br>
-cd WebAndScriptG23/Group\ 23\ Final\ Project/G23App
+cd WebAndScriptG23/"Group 23 Final Project"/G23App
 <br>
 npm install
 <br>
