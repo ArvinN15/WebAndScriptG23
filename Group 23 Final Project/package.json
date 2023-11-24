@@ -1,0 +1,19 @@
+{
+  "name": "group-23-final-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArvinN15/WebAndScriptG23.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArvinN15/WebAndScriptG23/issues"
+  },
+  "homepage": "https://github.com/ArvinN15/WebAndScriptG23#readme"
+}
