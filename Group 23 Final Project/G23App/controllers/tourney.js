@@ -7,7 +7,7 @@ module.exports.DislayTourneylist = async (req, res, next) => {
   //< Mark function as async
   try {
     const tourney = await tourney.find(); //< Use of await keyword
-    res.render("tourney", {
+    res.render("tourney/list", {
       title: "Tournament List",
       BookList: BookList,
     });
