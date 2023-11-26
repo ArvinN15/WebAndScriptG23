@@ -2,7 +2,6 @@ var express = require('express');
 var router = express.Router();
 //const { router } = require('../config/app');
 let tourney = require('../models/tourney');
-const tourney = require('../models/tourney');
 
 module.exports.DislayTourneylist = async (req,res,next)=>{ //< Mark function as async
     try{
