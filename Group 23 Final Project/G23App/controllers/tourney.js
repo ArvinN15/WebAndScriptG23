@@ -27,7 +27,7 @@ module.exports.AddTourney = async (req, res, next) => {
     });
   } catch (err) {
     console.error(err);
-    res.render("tourney/list", {
+    res.render("index", {
       error: "Error on the server",
     });
   }
@@ -41,11 +41,11 @@ module.exports.ProcessTourney = async (req, res, next) => {
       EndDate: req.body.EndDate,
     });
     tourney.create(newTourney).then(() => {
-      res.redirect("/tourney");
+      res.redirect("/");
     });
   } catch (error) {
     console.error(error);
-    res.render("tourney/list", {
+    res.render("index", {
       error: "Error on the server",
     });
   }
