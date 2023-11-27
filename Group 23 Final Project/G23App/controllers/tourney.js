@@ -44,7 +44,7 @@ module.exports.ProcessTourney = async (req, res, next) => {
       res.redirect("/tourney");
     });
   } catch (error) {
-    console.error(err);
+    console.error(error);
     res.render("tourney/list", {
       error: "Error on the server",
     });
