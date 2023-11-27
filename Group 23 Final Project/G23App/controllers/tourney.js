@@ -7,14 +7,14 @@ module.exports.DislayTourneylist = async (req, res, next) => {
   //< Mark function as async
   try {
     const tourney = await tourney.find(); //< Use of await keyword
-    res.render("tourney/list", {
+    res.render("index", {
       title: "Tournament List",
       BookList: BookList,
     });
   } catch (err) {
     console.error(err);
     //Handle error
-    res.render("tourney/list", {
+    res.render("index", {
       error: "Error on server",
     });
   }
