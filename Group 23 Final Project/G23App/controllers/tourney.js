@@ -14,7 +14,7 @@ module.exports.DislayTourneylist = async (req, res, next) => {
   } catch (err) {
     console.error(err);
     //Handle error
-    res.render("index", {
+    res.render("tourney/list", {
       error: "Error on server",
     });
   }
@@ -27,7 +27,7 @@ module.exports.AddTourney = async (req, res, next) => {
     });
   } catch (err) {
     console.error(err);
-    res.render("index", {
+    res.render("tourney/list", {
       error: "Error on the server",
     });
   }
@@ -45,7 +45,7 @@ module.exports.ProcessTourney = async (req, res, next) => {
     });
   } catch (error) {
     console.error(error);
-    res.render("index", {
+    res.render("tourney/list", {
       error: "Error on the server",
     });
   }
