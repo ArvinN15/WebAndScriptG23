@@ -96,17 +96,6 @@ router.post('/register',function(req,res,next){
   })
 })
 
-//logout
-router.logout('/logout', function(req,res,next){
-  req.logout(function(err){
-    if(err)
-    {
-      return next(err)
-    }
-  })
-  res.redirect('/');
-})
-
 module.exports = router;
 
 
