@@ -1,0 +1,37 @@
+<% include ../partials/navbar.ejs %>
+<main class="container">
+    <div class="row">
+        <div class="offset-md-1 col-md-10">
+            <h1><% title %> </h1>  
+            <a href="/bookslist/add" class="btn btn-primary" 
+            role="button"><i class="fas fa-plus-circle"></i> Add Tournament</a>      
+        <br>
+        <table class="table table-bordered table-striped table-hover">
+            <tr class="d-flex">
+                <th class="text-center col-2">Tournament Name</th>
+                <th class="text-center col-2">Start Date</th>
+                <th class="text-center col-1">End Date</th>
+            </tr>
+            <% for(let count=0;count<BookList.length;count++) { %>    
+            <tr class="d-flex">
+                <td class="text-center col-2"><%= TourneyList[count].TournamentName %></td>
+                <td class="text-center col-2"><%= TourneyList[count].StartDate %></td>
+                <td class="text-center col-1"><%= TourneyList[count].EndDate %></td>
+                <td class="text-center col-1">
+                    <a href="/bookslist/edit/<%= BookList[count]._id %>" 
+                        class="btn btn-primary btn-sm">
+                        <i class="fas fa-pencil-alt"></i> Edit
+                    </a>
+                </td>
+                <td class="text-center col-1">
+                    <a href="/bookslist/delete/<%= BookList[count]._id %>" 
+                        class="btn btn-danger btn-sm">
+                        <i class="fas trash-alt"></i> Delete
+                    </a>
+                </td>
+            </tr>
+            <% } %>
+        </table>
+    </div>
+    </div>
+</main>
