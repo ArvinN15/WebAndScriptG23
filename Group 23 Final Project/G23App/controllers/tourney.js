@@ -40,7 +40,7 @@ module.exports.ProcessTourney = async (req, res, next) => {
       StartDate: req.body.StartDate,
       EndDate: req.body.EndDate,
     });
-    tourney.create(newTourney).then(() => {
+    Tourney.create(newTourney).then(() => {
       res.redirect("/");
     });
   } catch (error) {
