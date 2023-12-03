@@ -1,5 +1,10 @@
-var express = require("express");
+const { name } = require('ejs');
+var express = require('express');
 var router = express.Router();
+let passport = require('passport');
+let DB = ('../config/db');
+let userModel = ('../models/user');
+let User = userModel.User;
 
 /* GET home page. */
 router.get("/", function (req, res, next) {
