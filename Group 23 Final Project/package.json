@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ArvinN15/WebAndScriptG23/issues"
   },
-  "homepage": "https://github.com/ArvinN15/WebAndScriptG23#readme"
+  "homepage": "https://github.com/ArvinN15/WebAndScriptG23#readme",
+  "dependencies": {
+    "fontawesome-free-6.2.1": "^6.2.1"
+  }
 }
